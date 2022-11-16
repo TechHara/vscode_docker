@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "main",
+            "type": "cppdbg", // c/c++ debugging
+            "request": "launch", // launch or attach
+            "cwd": "${workspaceFolder}", // working directory of the target
+            "program": "${workspaceFolder}/build/linux_uptime", // name of target to run
+            "args": [], // arguments to the program
+            "stopAtEntry": true, // break at main?
+            "environment": [
+                {"name": "env_name", "value": "env_value"},
+            ],
+            "externalConsole": false, // launch a new console?
+            "MIMode": "gdb", // gdb or lldb
+            "preLaunchTask": "build", // name of task to run before this
+            "targetArchitecture": "arm64" // most likely x86_64 or arm64
+        }
+    ]
+}
